@@ -1,14 +1,22 @@
 #!/bin/bash
-echo "choose option"
-echo "a for date"
+#case type
+
+echo "enter your choice"
+echo "a for current date"
 echo "b for list"
-echo "c for current directory"
+echo "c for current lcation"
 
 read choice
 
 case $choice in
-        a)date;;
-        b)ls;;
+        a)
+                echo "todays date is"
+                date
+                ;;
+        b)
+                echo "the list of files are "
+                ls
+                ;;
         c)pwd;;
-        *)echo "provide valid value"
+        *)echo "Kindly mention correct option"
 esac
